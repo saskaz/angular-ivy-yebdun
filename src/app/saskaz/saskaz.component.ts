@@ -12,7 +12,6 @@ export class SaskazComponent implements OnInit {
   posts$!: Observable<any[]>;
   @Output() buttonClickedEvent: EventEmitter<boolean> =
     new EventEmitter<boolean>();
-  @Output() clearClickedEvent: EventEmitter<void> = new EventEmitter<void>();
 
   constructor(private http: HttpClient) {}
 
